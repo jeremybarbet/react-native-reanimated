@@ -68,7 +68,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath('com.android.tools.build:gradle:4.2.1')
+        classpath('com.android.tools.build:gradle:4.2.2')
         classpath("de.undercouch:gradle-download-task:4.0.4")
     }
 }
@@ -313,7 +313,7 @@ def findNdkBuildFullPath() {
             return new File(ndkDir, getNdkBuildName()).getAbsolutePath()
         }
     }
-    
+
     def Properties properties = new Properties()
     if (rootProject.file("local.properties").exists()) {
         properties.load(project.rootProject.file("local.properties").newDataInputStream())
